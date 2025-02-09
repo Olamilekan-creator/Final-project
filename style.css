@@ -19,6 +19,8 @@ nav {
 
 h1 {
     font-size: 48px;
+    color: #243e63;
+    font-weight: bolder;
     }
 
 h2 {
@@ -198,7 +200,8 @@ FEATURES
     display: grid;
     display: flex;
     gap: 10px;
- 
+ max-width: 350px;
+ padding: 12px;
 }
 
 .feature__icon {
@@ -233,6 +236,7 @@ FEATURES
 .feature__img--wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .feature__text {
@@ -243,8 +247,6 @@ display: flex;
 
 .text__para {
  margin: 12px 0;
- width: calc(100% / 2);
-
 }
 
 /*
@@ -367,6 +369,14 @@ VALUES
 margin: 30px 0;
 }
 
+.value__sign--wrapper {
+    display: flex;
+}
+
+.value__box {
+    display: flex;
+}
+
 .value__img--wrapper {
 display: flex;
 flex-wrap: wrap;
@@ -417,6 +427,8 @@ height: 100vh;
 .price__wrapper {
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+padding: 0 10px;
 }
 
 .price__container {
@@ -427,10 +439,14 @@ flex-wrap: wrap;
 .price__box {
 height: 607.5px;
 width: 384px;
-border: 3px solid transparent;
 border-radius: 6px;
 background-color:rgb(129,230,217);
 
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
 }
 
 .price__stripe {
@@ -442,7 +458,7 @@ background-color:rgb(129,230,217);
 .price__first {
     height: 208.5px;
     width: 384px;
-    border: 1px solid black;
+    border: 1px solid rgb(221, 212, 212);
     padding: 32px;
     background-color: #fff;
 }
@@ -450,7 +466,7 @@ background-color:rgb(129,230,217);
 .price__second {
     height: 274px;
     width: 384px;
-    border: 2px solid black;
+    border: 1px solid rgb(221, 212, 212);
     padding: 32px;
     background-color: #fff;
 }
@@ -458,15 +474,21 @@ background-color:rgb(129,230,217);
 .button__third {
     height: 117px;
     width: 384px;
-    border: 2px solid black;
+    border: 1px solid rgb(221, 212, 212);
     padding: 32px;
     background-color: #fff;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 .price__description--text {
 text-align: center;
 font-size: 16px;
+padding-bottom: 12px;
+}
 
+.price__text--description {
+    text-align: center;
 }
 
 .price {
@@ -507,4 +529,77 @@ padding: 4px;
 
 .price__btn {
 background-color: rgb(56,178,172);
+}
+
+/* 
+
+TESTIMONIALS
+
+*/
+
+.testimonial__row {
+    max-width: 1263px;
+    margin: 0 auto;
+}
+
+.testimonial__description {
+    padding: 96px 0;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__img {
+    width: 631.5px;
+    height: 608px;
+    padding: 20px 0;
+}
+
+.testimonials__text {
+padding: 0 0 0 64px;
+}
+
+.testimonial__text {
+    font-size: 16px;
+}
+
+.testimonial__para {
+color: grey;
+margin: 40px 0;
+font-size: 18px;
+}
+
+.testimonial__big {
+margin: 20px 0;
+}
+
+.stars {
+    color: rgba(246, 173, 85);
+}
+
+.amazing {
+margin: 12px 0;
+}
+
+.amazing__para {
+margin: 30px 0;
+}
+
+.smile {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+
+.smile__para {
+color: grey;
+font-size: 16px;
+}
+
+.name {
+    margin-top: 10px 0;
+}
+
+.grid_item--img {
+display: grid;
+align-items: center;
 }
